@@ -10,15 +10,15 @@ function App() {
       
       <div className="container-fluid">
         <div className="d-flex align-items-center">
-          <div className="site-logo mr-auto w-25"><a href="index.html">OneSchool</a></div>
+          <div className="site-logo mr-auto w-25"><a href="index.html">LaListaDeEspera</a></div>
 
           <div className="mx-auto text-center">
             <nav className="site-navigation position-relative text-right" role="navigation">
               <ul className="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
-                <li><a href="#home-section" className="nav-link active">Home</a></li>
-                <li><a href="#courses-section" className="nav-link">Courses</a></li>
-                <li><a href="#programs-section" className="nav-link">Programs</a></li>
-                <li><a href="#teachers-section" className="nav-link">Teachers</a></li>
+                <li><a href="#Inicio-section" className="nav-link active">Inicio</a></li>
+                <li><a href="#Qué ofrecemos-section" className="nav-link">Qué ofrecemos</a></li>
+                <li><a href="#Contacto-section" className="nav-link">Contacto</a></li>
+                <li><a href="#Nuestro equipo-section" className="nav-link">Nuestro equipo</a></li>
               </ul>
             </nav>
           </div>
@@ -26,7 +26,7 @@ function App() {
           <div className="ml-auto w-25">
             <nav className="site-navigation position-relative text-right" role="navigation">
               <ul className="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
-                <li className="cta"><a href="#contact-section" className="nav-link"><span>Contact Us</span></a></li>
+                <li className="cta"><a href="#contact-section" className="nav-link"><span>Iniciar sesión</span></a></li>
               </ul>
             </nav>
             <a href="http://google.es" className="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span className="icon-menu h3"></span></a>
@@ -40,7 +40,7 @@ function App() {
 
 
     {/* // intro section  */}
-    <div className="intro-section" id="home-section">
+    <div className="intro-section" id="Inicio-section">
       
       <div className="slide-1" style={{backgroundImage: "url(&quot;images/hero_1.jpg&quot;)", backgroundPosition: "50% -25px;" }} data-stellar-background-ratio="0.5">
         <div className="container">
@@ -49,24 +49,24 @@ function App() {
             <div className="col-12">
               <div className="row align-items-center">
                 <div className="col-lg-6 mb-4">
-                  <h1 data-aos="fade-up" data-aos-delay="100" className="aos-init aos-animate">Learn From The Expert</h1>
-                  <p className="mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-                  <p data-aos="fade-up" data-aos-delay="300" className="aos-init aos-animate"><a href="#" className="btn btn-primary py-3 px-5 btn-pill">Admission Now</a></p>
+                  <h3 data-aos="fade-up" data-aos-delay="100" className="aos-init aos-animate" style={{color: 'white'}}>Una <b>lista de espera online</b> para poder <b>mantener la distancia</b>.</h3>
+                  <p className="mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Gestiona el acceso a tu recinto facilmente para poder evitar contagios del COVID-19.</p>
+                  {/* <p data-aos="fade-up" data-aos-delay="300" className="aos-init aos-animate"><a href="#" className="btn btn-primary py-3 px-5 btn-pill">Admission Now</a></p> */}
                 </div>
                 <div className="col-lg-5 ml-auto aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
                   <form action="" method="post" className="form-box">
-                    <h3 className="h4 text-black mb-4">Sign Up</h3>
+                    <h3 className="h4 text-black mb-4">Crear una cuenta</h3>
                     <div className="form-group">
-                      <input type="text" className="form-control" placeholder="Email Addresss" />
+                      <input type="text" className="form-control" placeholder="Correo electrónico" />
                     </div>
                     <div className="form-group">
-                      <input type="password" className="form-control" placeholder="Password" />
+                      <input type="Contraseña" className="form-control" placeholder="Contraseña" />
                     </div>
                     <div className="form-group mb-4">
-                      <input type="password" className="form-control" placeholder="Re-type Password" />
+                      <input type="Contraseña" className="form-control" placeholder="Repetir Password" />
                     </div>
                     <div className="form-group">
-                      <input type="submit" className="btn btn-primary btn-pill" value="Sign up" />
+                      <input type="submit" className="btn btn-primary btn-pill" value="Crear una cuenta" />
                     </div>
                   </form>
                 </div>
@@ -86,27 +86,27 @@ function App() {
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h3>About OneSchool</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+            <h3>LaListaDeEspera</h3>
+            <p>Servicio para gestionar el acceso de personas a cualquier establecimiento. Fácil de usar y totalmente customizable.</p>
           </div>
 
           <div class="col-md-3 ml-auto">
-            <h3>Links</h3>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Teachers</a></li>
+            <h3>MENU</h3>
+            <ul class="list-unstyled footer-MENU">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Qué ofrecemos</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Nuestro equipo</a></li>
             </ul>
           </div>
 
           <div class="col-md-4">
-            <h3>Subscribe</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
-            <form action="#" class="footer-subscribe">
+            <h3>SUBSCRÍBETE</h3>
+            <p>¿Quieres recibir nuestro boletín de noticias? Introduce tu email en el siguiente formulario para estar en la lista de mailing y enterarte de todas nuestras novedades.</p>
+            <form action="#" class="footer-SUBSCRÍBETE">
               <div class="d-flex mb-5">
                 <input type="text" class="form-control rounded-0" placeholder="Email" />
-                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe" />
+                <input type="submit" class="btn btn-primary rounded-0" value="SUBSCRÍBETE" />
               </div>
             </form>
           </div>
