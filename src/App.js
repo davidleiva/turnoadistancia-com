@@ -23,13 +23,26 @@ function App() {
             </nav>
           </div>
 
-          <div className="ml-auto w-25">
+          <div className="ml-auto w-25" style={{position: 'relative',}}>
             <nav className="site-navigation position-relative text-right" role="navigation">
               <ul className="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
                 <li className="cta"><a href="#contact-section" className="nav-link"><span>Iniciar sesión</span></a></li>
               </ul>
             </nav>
             <a href="http://google.es" className="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span className="icon-menu h3"></span></a>
+            <div className="LoginForm form-box">
+              <form
+                onSubmit={ () => console.log('submit del login')}
+              >
+                <div className="form-group">
+                  <input type="email" className="form-control" placeholder="Correo Electrónico" />
+                </div>
+                <div className="form-group">
+                  <input type="password" className="form-control" placeholder="Contraseña" />
+                </div>
+                <button className="btn btn-primary btn-pill w-100" type="sumbit">Acceder</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -42,7 +55,7 @@ function App() {
     {/* // intro section  */}
     <div className="intro-section" id="Inicio-section">
       
-      <div className="slide-1" style={{backgroundImage: "url(&quot;images/hero_1.jpg&quot;)", backgroundPosition: "50% -25px;" }} data-stellar-background-ratio="0.5">
+      <div className="slide-1" style={{backgroundImage: "url(bckg_final.png)", backgroundPosition: "50% -25px;" }} data-stellar-background-ratio="0.5">
         <div className="container">
 
           <div className="row align-items-center">
@@ -63,7 +76,7 @@ function App() {
                       <input type="Contraseña" className="form-control" placeholder="Contraseña" />
                     </div>
                     <div className="form-group mb-4">
-                      <input type="Contraseña" className="form-control" placeholder="Repetir Password" />
+                      <input type="Contraseña" className="form-control" placeholder="Repetir Contraseña" />
                     </div>
                     <div className="form-group">
                       <input type="submit" className="btn btn-primary btn-pill" value="Crear una cuenta" />
