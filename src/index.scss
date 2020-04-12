@@ -1,12 +1,16 @@
-$primary: #7971ea;
+$primary: #25d366;
+$font-family-sans-serif: 'Lato', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
 @import '../node_modules/bootstrap/scss/bootstrap';
+
 
 /* Base */
 body {
     line-height: 1.7;
     color: gray;
     font-weight: 300;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    color: #444444 !important; }
   
   ::-moz-selection {
     background: #000;
@@ -649,6 +653,7 @@ body {
           max-width: 100%; } }
   
   .slide-1 {
+    position: relative;
     background-size: cover;
     background-position: center; }
     .slide-1:before {
@@ -656,8 +661,8 @@ body {
       position: absolute;
       height: 100%;
       width: 100%;
-      background: #343a40;
-      opacity: .9;
+      background: #000000;
+      opacity: .5;
       border-bottom-right-radius: 0px; }
       @media (max-width: 991.98px) {
         .slide-1:before {
@@ -675,9 +680,19 @@ body {
         margin-top: 0px; }
   
   .form-box {
-    padding: 40px;
+    padding: 40px 20px;
     background: #fff;
-    border-radius: 7px; }
+    border-radius: 7px;
+
+    @include media-breakpoint-up(md) {
+      min-width: 370px;
+    }
+    
+    @include media-breakpoint-down(md) {
+      max-width: 300px;
+      margin: auto;
+    }
+  }
   
   .site-section {
     padding: 4em 0;
@@ -871,8 +886,8 @@ body {
         background-color: #7971ea; }
   
   .footer-section {
-    padding: 7em 0;
-    background-color: #fafafa; }
+    padding: 3em 0 7em;
+     }
     .footer-section p {
       font-size: 1rem; }
     .footer-section h3 {
@@ -1133,11 +1148,83 @@ body {
 
 
 .LoginForm {
-    position: absolute;
-    right: 20px;
+    // position: absolute;
+    // right: 20px;
     background: white;
     padding: 16px;
-    box-shadow: 0 3px 3px 2px rgba(0,0,0,0.2);
+    // box-shadow: 0 3px 3px 2px rgba(0,0,0,0.2);
     top: calc(100% + 12px);
-    width: 320px;
+    width: 420px;
+}
+
+.ThreeSteps {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+  font-size: 14px;
+  color: "#4A4A4A";
+
+  &__IMGContainer {
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 50px;
+    width: 50px;
+    margin-right: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+      height: 32px;
+      width: auto;
+    }
+  }
+}
+
+.withLogo, .withLogo a {
+  font-size: 0 !important;
+}
+
+.withLogo {
+  background-image: url("/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-section {
+  background-color: #f8f8f8;
+  border-top: 1px solid #eaeaea;
+}
+
+.Footer__Logo {
+  width: auto;
+  background-image: url(/logo_dark.png);
+  height: 20px;
+  background-position: left center;
+}
+
+.Header {
+  background-color: #838383;
+
+  &__Logo {
+    width: 310px;
+    height: 25px;
+    display: block;
+  }
+}
+
+.AdminSection,
+.AreaSection,
+.PublicAreaSection {
+  padding-top: 120px;
+
+  &__Section {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+  }
+
+  .admin-btn {
+    width: 120px;
+    text-align: center;
+  }
 }
